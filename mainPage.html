@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Main page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    </head>
+    <body style="font-family: 'Rubik Dirt', system-ui;" class="bg-[rgb(50,52,55,255)] text-white h-screen">
+        
+        <!-- Header -->
+        <div class="flex justify-center items-center h-[40%] pt-[10%]">
+            <h1 style="font-family: 'Barriecito', system-ui;" class="text-7xl text-yellow-500">Weather Dashboard</h1>
+        </div>
+
+        <!-- input filed -->
+        <div class="flex justify-center items-center h-[12%]">
+            <input 
+                type="text" 
+                id="myTown" 
+                placeholder="enter city"
+                class="flex items-center h-[70%] w-[25%] rounded bg-[rgb(50,52,55,255)]
+                placeholder:text-3xl placeholder:text-center placeholder:text-grey-100
+                 outline-none
+                text-3xl text-center"
+            />
+        </div>
+
+        <!-- geolocation button -->
+        <div class="flex justify-center items-center h-[12%]">
+            <button 
+            id="getLocation" 
+            class="hover:text-yellow-500 text-3xl px-12 py-3 rounded"
+            >locate me</button>
+        </div>
+        <script type="module" src="script/scriptMain.js"></script>
+    </body>
+</html>
