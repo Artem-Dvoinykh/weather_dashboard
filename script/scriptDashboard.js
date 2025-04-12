@@ -186,7 +186,7 @@ async function loadTheWeather() {
     let lon = sessionStorage.getItem("lon");
 
     // fetch the weather forecast
-    const weatherRes = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`);
+    const weatherRes = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`);
     const weatherData = await weatherRes.json();
     if (weatherData.cod !== "200") console.error("weather not found");
     else weatherAllData = weatherData.list;

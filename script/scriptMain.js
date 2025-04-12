@@ -15,7 +15,7 @@ async function search() {
     let lat, lon;
 
     // fetch the coordinates of the city
-    const geoRes = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`);
+    const geoRes = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`);
     const geoData = await geoRes.json();
     if (geoData.length == 0) console.error("City not found");
     else {
