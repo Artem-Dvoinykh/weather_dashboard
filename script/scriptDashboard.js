@@ -207,7 +207,6 @@ async function loadTheWeather() {
     redirect: 'follow'
     };
 
-    console.log(uviData);
     const uviRes = await fetch(`https://api.openuv.io/api/v1/forecast?lat=${lat}&lng=${lon}`, requestOptions);
     const uviDataJson = await uviRes.json();
     if (uviDataJson.error) console.error("uvi data not found");
@@ -221,7 +220,7 @@ async function loadTheWeather() {
 // go back to the main page
 function backToMainPage() {
     sessionStorage.setItem("myTown", "noTown");
-    window.location.href = "mainPage.html";
+    window.location.href = "index.html";
 }
 
 function setButtonTo(color, id) {
