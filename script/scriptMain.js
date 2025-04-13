@@ -31,7 +31,11 @@ async function search() {
 
 function geoLocate() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+        navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 0
+          });
     } else {
         console.log("Geolocation not supported by this browser.");
         alert("Geolocation not supported by this browser.");
