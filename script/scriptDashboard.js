@@ -164,6 +164,9 @@ function setCurDay(dayNumb) {
     const realNow = new Date();
     let curDay = new Date(realNow.getFullYear(), realNow.getMonth(), realNow.getDate() + dayNumb, 0, 0, 0);
     let nextDay = new Date(realNow.getFullYear(), realNow.getMonth(), realNow.getDate() + dayNumb + 1, 0, 0, 0);
+    if (dayNumb == 0) {
+        nextDay = new Date(realNow.getFullYear(), realNow.getMonth(), realNow.getDate() + 1, realNow.getHours(), 0, 0);
+    }
 
     weatherCurData = weatherAllData.filter(ind => ind.dt * 1000 >= curDay.getTime() && ind.dt * 1000 <= nextDay.getTime());
 
