@@ -65,5 +65,5 @@ function errorCallback(error) {
         default:
             console.error("Unknown error", error.message);
     }
-    alert("Geolocation error:", error.message);
+    alert("Geolocation error: geolocation is not enabled");
 }

@@ -20,6 +20,8 @@ function setButtons() {
     document.getElementById("temp").addEventListener("click", setWeatherTypeTemp);
     document.getElementById("rain").addEventListener("click", setWeatherTypeRain);
     document.getElementById("sun").addEventListener("click", setWeatherTypeSun);
+
+    document.getElementById("townHeader").addEventListener("click", backToMainPage);
     
     // set labels to the "days of the week" buttons
     const today = new Date();
