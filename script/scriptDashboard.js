@@ -78,7 +78,7 @@ function setWeatherTypeSun() {
     })
 
     if (uviCurData.length == 0) {
-        document.getElementById('spaceForInfo').innerHTML= 'not available';
+        document.getElementById('spaceForInfo').innerHTML= "I'm out of API requests for today :(";
     }
     else {
         drawGraph(listX, listY, 'uv index (0-10)');
