@@ -52,6 +52,18 @@ function successCallback(position) {
 }
 
 function errorCallback(error) {
-    console.error("Geolocation error:", error.message);
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            console.error("Permission denied by user");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            console.error("Position unavailable");
+            break;
+        case error.TIMEOUT:
+            console.error("Request timed out");
+            break;
+        default:
+            console.error("Unknown error", error.message);
+    }
     alert("Geolocation error:", error.message);
 }
