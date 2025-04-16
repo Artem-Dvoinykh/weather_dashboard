@@ -1,4 +1,4 @@
-Weather dasboard web-site with the following functions:
+Weather dashboard web-site with the following functions:
 1) Geolocation
 2) Searching the town by name
 3) Seeing all kinds of information about the city (general, temperature, rain probability, UV index)
