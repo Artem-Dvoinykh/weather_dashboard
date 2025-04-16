@@ -1,7 +1,7 @@
 Weather dashboard web-site with the following functions:
 1) Geolocation
 2) Searching the town by name
-3) Seeing all kinds of information about the city (general, temperature, rain probability, UV index)
+3) Seeing all kinds information about the weather for up to five days ahead (general, temperature, rain probability, UV index)
 
 LINK: https://artem-dvoinykh.github.io/weather_dashboard/index.html
 
